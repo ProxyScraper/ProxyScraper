@@ -11,5 +11,5 @@ echo "Commit Result to Github"
 git config --global user.email "$GIT_EMAIL"
 git config --global user.name "$GIT_NAME"
 git add -A
-git commit -m "Update Proxy List: `$(date)`"
+git commit -m "Update Proxy List: $(date)"
 git push
