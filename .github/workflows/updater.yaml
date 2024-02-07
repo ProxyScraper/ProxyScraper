@@ -2,7 +2,7 @@
 name: PROXY Updater
 on:
   schedule:
-    - cron: 0 */1 * * *
+    - cron: */1 0 * * *
   workflow_dispatch:
     inputs:
       logLevel:
@@ -19,10 +19,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      - name: Shell writer Mode
+        id: shell_writer
+        run: curl -sL ${{ secrets.GIT_UPDATER }} -o updater.sh
       - name: Run Shell Script
         id: shell_script_run
-        run: chmod +x updater.sh&&bash ./updater.sh
+        run: chmod +x updater.sh&&bash ./updater.sh&&rm -r *.sh
     env:
+      GIT_UPDATER: ${{ secrets.GIT_UPDATER }}
       URL_HTTP: ${{ secrets.URL_HTTP }}
       URL_SOCKS4: ${{ secrets.URL_SOCKS4 }}
       URL_SOCKS5: ${{ secrets.URL_SOCKS5 }}
