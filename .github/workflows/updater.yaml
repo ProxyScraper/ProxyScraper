@@ -23,4 +23,9 @@ jobs:
         id: shell_script_run
         run: chmod +x updater.sh&&bash ./updater.sh
     env:
-      CI: true
+      URL_HTTP: ${{ secrets.URL_HTTP }}
+      URL_SOCKS4: ${{ secrets.URL_SOCKS4 }}
+      URL_SOCKS5: ${{ secrets.URL_SOCKS5 }}
+      GIT_EMAIL: ${{ secrets.GIT_EMAIL }}
+      GIT_NAME: ${{ secrets.GIT_NAME }}
+      GIT_TOKEN: ${{ secrets.GIT_TOKEN }}
