@@ -1,0 +1,15 @@
+name: PROXY Updater
+
+on:
+  schedule:
+    - cron: '*/10 * * * *'
+
+jobs:
+  update_proxy:
+    runs-on: ubuntu-latest
+    name: Check Proxy List 
+    steps:
+      - uses: actions/checkout@v2
+      - name: Run Shell Script
+        id: shell_script_run
+        run: bash ./updater.sh
