@@ -2,7 +2,7 @@
 __pycache__/
 *.py[cod]
 *$py.class
-*.sh
+
 # C extensions
 *.so
 
@@ -154,6 +154,7 @@ cython_debug/
 
 # PyCharm
 #  JetBrains specific template is maintained in a separate JetBrains.gitignore that can
+updater.sh
 #  be found at https://github.com/github/gitignore/blob/main/Global/JetBrains.gitignore
 #  and can be added to the global gitignore or merged into this file.  For a more nuclear
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
