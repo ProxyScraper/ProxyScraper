@@ -1,5 +1,5 @@
+rm -r *.txt
 echo "Getting Proxy List..."
-
 curl -sL $URL_HTTP -o http.txt
 echo "Getting Proxy HTTP Complate."
 curl -sL $URL_SOCKS4 -o socks4.txt
