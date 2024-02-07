@@ -1,0 +1,26 @@
+
+name: PROXY Updater
+on:
+  schedule:
+    - cron: 0 */1 * * *
+  workflow_dispatch:
+    inputs:
+      logLevel:
+        description: Log level
+        required: true
+        default: warning
+        type: choice
+        options:
+          - info
+          - warning
+          - debug
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Run Shell Script
+        id: shell_script_run
+        run: chmod +x updater.sh&&bash ./updater.sh
+    env:
+      CI: true
