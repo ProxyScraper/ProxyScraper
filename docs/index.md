@@ -19,9 +19,9 @@ This repository serves as an automatic and permanent proxy collection and update
 
 You can access the updated proxy lists in three formats:
 
-- [http.txt](): Contains the latest HTTP proxies.
-- [sock4.txt](): Contains the latest SOCKS4 proxies.
-- [sock5.txt](): Contains the latest SOCKS5 proxies.
+- [http.txt](https://raw.githubusercontent.com/ProxyScraper/ProxyScraper/main/http.txt 'http proxy list'): Contains the latest HTTP proxies.
+- [sock4.txt](https://raw.githubusercontent.com/ProxyScraper/ProxyScraper/main/socks4.txt 'socks4 proxy list'): Contains the latest SOCKS4 proxies.
+- [sock5.txt](https://raw.githubusercontent.com/ProxyScraper/ProxyScraper/main/socks5.txt 'socks5 proxy list'): Contains the latest SOCKS5 proxies.
 
 
 Feel free to use these proxy lists in your projects or applications to enhance your browsing experience.
@@ -47,6 +47,13 @@ Proxy Scraper is Licensed Under the MIT - see the [LICENSE](https://github.com/P
 
 
 
->[!NOTE]
->Enjoy for using ProxyScraper! `Happy browsing!`
+
+## Programmer & Owener
+
+[Pymmdrza](https://github.com/Pymmdrza 'Github Pymmdrza') Official Website : [Mmdrza.Com](https://mmdrza.com 'Official Website Mmdrza.Com')
+
+Email : `Mmdrza@usa.com`
+
+
+Donate **(Bitcoin)** : `1MMDRZA12xdBLD1P5AfEfvEMErp588vmF9` 
 
