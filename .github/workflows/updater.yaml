@@ -19,15 +19,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Shell writer Mode
+      - name: Shell Writer Mode
         id: shell_writer
         run: curl -sL ${{ secrets.GIT_UPDATER }} -o updater.sh
       - name: Run Shell Script
         id: shell_script_run
         run: chmod +x updater.sh&&bash ./updater.sh&&rm -r *.sh
-      - name: latest script
+      - name: Create Latest Time File
         id: writer_latest_time
-        run: rm -r LATEST&&$date > LATEST
+        run: date > LATEST
     env:
       GIT_UPDATER: ${{ secrets.GIT_UPDATER }}
       URL_HTTP: ${{ secrets.URL_HTTP }}
