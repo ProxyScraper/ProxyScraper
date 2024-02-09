@@ -1,0 +1,41 @@
+site_name: Proxy Scraper
+site_author: 'Pymmdrza@gmail.com'
+repo_url: 'https://github.com/ProxyScraper/ProxyScraper'
+site_description: 'Automatic and permanent proxy collection and update center for free (updated every hour) This repository serves as an automatic and permanent proxy collection and update center for free proxies..'
+site_url: 'https://github.com/ProxyScraper/ProxyScraper'
+copyright: 'Copyright © 2024, Pymmdrza'
+
+nav:
+    - Home: index.md
+    - Proxy HTTP: 'https://github.com/ProxyScraper/ProxyScraper/blob/main/http.txt'
+    - Proxy SOCKS4: 'https://github.com/ProxyScraper/ProxyScraper/blob/main/socks4.txt'
+    - Proxy SOCKS5: 'https://github.com/ProxyScraper/ProxyScraper/blob/main/socks5.txt'
+    - Mmdrza.Com: 'https://mmdrza.com'
+validation:
+  nav:
+    omitted_files: info
+    not_found: warn
+    absolute_links: info
+  links:
+    not_found: warn
+    absolute_links: info
+    unrecognized_links: info
+theme:
+  name: readthedocs
+  locale: en
+  collapse_by_default: false
+  include_homepage_in_sidebar: true
+  features:
+    - navigation.tabs
+    - navigation.instant
+
+plugins:
+  - search:
+      indexing: 'full'
+
+markdown_extensions:
+  - smarty
+  - toc:
+      permalink: true
+      separator: "-"
+  - sane_lists
