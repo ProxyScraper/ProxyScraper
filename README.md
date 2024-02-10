@@ -10,8 +10,8 @@
 
 ---
 
-Automatic and permanent proxy collection and update center for free (updated every hour)
-This repository serves as an automatic and permanent proxy collection and update center for free proxies. The proxy list is updated every hour to ensure the latest available proxies are always accessible.
+Automatic and permanent proxy collection and update center for free (updated 30 minutes)
+This repository serves as an automatic and permanent proxy collection and update center for free proxies. The proxy list is updated every 30 minutes to ensure the latest available proxies are always accessible.
 
 
 ## Usage
