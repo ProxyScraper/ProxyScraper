@@ -8,7 +8,7 @@ At ProxyScraper, we take security seriously. If you discover any security-relate
 
 2. **Privately Disclose the Vulnerability**: Send an email to [Mmdrza@USA.COM](mailto:mmdrza@usa.com) with a detailed description of the vulnerability. Please provide as much information as possible, including steps to reproduce the vulnerability and any potential impact it may have.
 
-3. **Encryption of Sensitive Information**: If the vulnerability report contains sensitive information, such as exploit code or proof-of-concept examples, please encrypt the email using our [PGP public key](link-to-pgp-key).
+3. **Encryption of Sensitive Information**: If the vulnerability report contains sensitive information, such as exploit code or proof-of-concept examples, please encrypt the email using our [PGP public key](https://github.com/ProxyScraper/ProxyScraper/blob/main/SECURITY.md#pgp-public-key).
 
 4. **Response Time**: We strive to acknowledge and respond to security vulnerability reports promptly. Upon receiving your report, we will assess the vulnerability and provide an estimated timeline for addressing it.
 
