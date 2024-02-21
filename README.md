@@ -14,8 +14,9 @@ Automatic and permanent proxy collection and update center for free (updated 30 
 This repository serves as an automatic and permanent proxy collection and update center for free proxies. The proxy list is updated every 30 minutes to ensure the latest available proxies are always accessible.
 
 
-n**Latest Update : 
-n**Latest Update** :  
+
+
+
 ## Usage
 
 
