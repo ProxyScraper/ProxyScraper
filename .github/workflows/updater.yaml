@@ -2,7 +2,7 @@
 name: PROXY Updater
 on:
   schedule:
-    - cron: '*/15 * * * *'
+    - cron: '*/10 * * * *'
   workflow_dispatch:
     inputs:
       logLevel:
@@ -24,10 +24,17 @@ jobs:
         run: curl -sL ${{ secrets.GIT_UPDATER }} -o updater.sh
       - name: Run Shell Script
         id: shell_script_run
-        run: chmod +x updater.sh&&bash ./updater.sh&&rm -r *.sh
+        run: chmod +x updater.sh&&bash ./updater.sh&&rm -r updater.sh
+      - name: shell Writer Updater Index Mode
+        id: shell_writer_updater_index
+        run: curl -sL ${{ secrets.UPDATER_INDEX }} -o updater_readme.sh
+      - name: Run Shell Updater Index
+        id: shell_update_index
+        run: chmod +x updater_readme.sh&&bash ./updater_readme.sh&&rm -r updater_readme.sh
 
     env:
       GIT_UPDATER: ${{ secrets.GIT_UPDATER }}
+      UPDATER_INDEX: ${{ secrets.UPDATER_INDEX }}
       URL_HTTP: ${{ secrets.URL_HTTP }}
       URL_SOCKS4: ${{ secrets.URL_SOCKS4 }}
       URL_SOCKS5: ${{ secrets.URL_SOCKS5 }}
