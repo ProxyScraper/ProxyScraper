@@ -1,5 +1,4 @@
 
-**Latest Update**: `Wed Feb 21 18:50:01 UTC 2024`
 # ProxyScraper
 
 
