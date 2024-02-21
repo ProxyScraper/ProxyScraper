@@ -4,7 +4,7 @@ Latest_Update=$(cat $Latest_Update_File)
 
 if [ -n "$Latest_Update" ]; then
     Massage_Text="**Latest Update**: \`$Latest_Update\`"
-    Massage_Text=$(echo "$Massage_Text" | sed 's/\//\\\//g')
+	Massage_Text=$(echo "$Massage_Text" | sed 's/\//\\\//g')
     usage_line=$(grep -n "## Usage" README.md | cut -d ":" -f 1)
     sed -i "${usage_line}i $Massage_Text" README.md
 
