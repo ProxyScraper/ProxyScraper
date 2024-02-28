@@ -15,7 +15,8 @@ This repository serves as an automatic and permanent proxy collection and update
 
 
 
-**Latest Update**: `Wed Feb 28 15:59:39 UTC 2024`
+**Latest Update**: `Wed Feb 28 16:25:06 UTC 2024`
+
 
 
 
